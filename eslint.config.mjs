@@ -14,6 +14,24 @@ export default tsEslint.config(
     },
   },
   {
+    languageOptions: {
+      globals: {
+        // Node.js globals
+        process: 'readonly',
+        console: 'readonly',
+        Buffer: 'readonly',
+        __dirname: 'readonly',
+        __filename: 'readonly',
+        URL: 'readonly',
+        URLSearchParams: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
+      },
+    },
+  },
+  {
     rules: {
       quotes: ['error', 'single', { allowTemplateLiterals: false }],
       'no-unused-vars': 'off',
