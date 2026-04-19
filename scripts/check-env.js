@@ -26,12 +26,8 @@ console.log('\n=== Package config ===');
 console.log(`name           : ${pkg.name}`);
 console.log(`version        : ${pkg.version}`);
 console.log(`packageManager : ${pkg.packageManager ?? '(not set)'}`);
-console.log(
-  `engines.node   : ${pkg.engines?.node ?? '(not set)'}`,
-);
-console.log(
-  `volta.node     : ${pkg.volta?.node ?? '(not set)'}`,
-);
+console.log(`engines.node   : ${pkg.engines?.node ?? '(not set)'}`);
+console.log(`volta.node     : ${pkg.volta?.node ?? '(not set)'}`);
 
 // ── CI environment variables ─────────────────────────────────────────────────
 const CI_VARS = [
