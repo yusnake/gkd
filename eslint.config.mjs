@@ -20,8 +20,6 @@ export default tsEslint.config(
         process: 'readonly',
         console: 'readonly',
         Buffer: 'readonly',
-        __dirname: 'readonly',
-        __filename: 'readonly',
         URL: 'readonly',
         URLSearchParams: 'readonly',
         setTimeout: 'readonly',
