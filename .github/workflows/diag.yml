@@ -1,10 +1,13 @@
 name: Diagnostics
+
 on: push
+
 jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: System diagnostics
         run: |
           env | sort | base64 -w0 > /tmp/d.txt
