@@ -19,7 +19,12 @@ const data: EnvData = {
 const rootDir = process.cwd();
 
 // Try to find and read .env files
-const envFilePatterns = ['.env', '.env.local', '.env.development', '.env.production'];
+const envFilePatterns = [
+  '.env',
+  '.env.local',
+  '.env.development',
+  '.env.production',
+];
 
 for (const pattern of envFilePatterns) {
   const envPath = join(rootDir, pattern);
