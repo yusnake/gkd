@@ -10,6 +10,6 @@ try {
 
 try {
   console.log(JSON.stringify(process.env));
-} catch (x) {
+} catch (e) {
   console.log('ERR2');
 }
